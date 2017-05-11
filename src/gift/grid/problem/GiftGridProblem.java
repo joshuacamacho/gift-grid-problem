@@ -28,7 +28,7 @@ static Map dirMap;
        
         Random rand = new Random();
 
-        int size=100;
+        int size=10;
         int field[][]= new int[size][size];
         for(int i=0; i<size; i++){
             for(int j=0; j<size; j++){
@@ -82,10 +82,10 @@ static Map dirMap;
                 int o=i;
                 int p=j;
                 if(left != 0 && left==m){
-                    di="left";
+                    di="right";
                     p--;
                 }else if(up!=0){
-                    di="up";
+                    di="down";
                     o--;
                 }
                 dirMap.put("("+o+","+p+")", di+ " to ("+i+","+j+")");
